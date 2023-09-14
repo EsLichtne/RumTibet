@@ -1,0 +1,16 @@
+@use "../common/variables.scss";
+
+.navigation__hat {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.navigation__button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

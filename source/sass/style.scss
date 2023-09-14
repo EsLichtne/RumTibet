@@ -1,9 +1,11 @@
-// Common
+//Common
+@use "common/fonts.scss";
 @use "common/global.scss";
 @use "common/mixins.scss";
 @use "common/variables.scss";
 @use "common/visually-hidden.scss";
-// Blocks
+//Blocks
+@use "blocks/container.scss";
 @use "blocks/about.scss";
 @use "blocks/article.scss";
 @use "blocks/blog.scss";
