@@ -1,0 +1,26 @@
+@use "../common/variables.scss";
+
+.about {
+  padding: 50px 0;
+}
+
+.about__entry {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.about__headline {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.about__intro {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.about__button {
+  max-width: 176px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}

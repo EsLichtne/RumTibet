@@ -1,0 +1,51 @@
+@use "../common/variables.scss";
+
+.subscribe {
+  padding-bottom: 39px;
+}
+
+.subscribe__wrapper {
+  padding: 24px;
+  padding-bottom: 18px;
+  box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
+  border-radius: 6px;
+}
+
+.subscribe__entry {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.subscribe__headline {
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.subscribe__label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: variables.$text-primary;
+}
+
+.subscribe__field {
+  width: 100%;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.subscribe__button {
+  max-width: 240px;
+  margin-bottom: 11px;
+}
+
+.subscribe__prevention {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: variables.$text-primary;
+}
+
+.subscribe__link {
+  color: variables.$text-primary;
+}

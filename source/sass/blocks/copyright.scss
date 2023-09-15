@@ -1,0 +1,23 @@
+@use "../common/variables.scss";
+
+.copyright {
+  padding: 20px 40px;
+  text-align: center;
+  background-color: variables.$text-primary;
+}
+
+.copyright__name {
+  margin-bottom: 8px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.copyright__policy {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}

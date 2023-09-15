@@ -1,0 +1,22 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.menu__list {
+  @include mixins.list-reset;
+}
+
+.menu__item {
+  padding-top: 50px;
+}
+
+.menu__headline {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #f3f5f4;
+}
+
+.menu__sublist {
+  @include mixins.list-reset;
+}

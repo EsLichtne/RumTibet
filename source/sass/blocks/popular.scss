@@ -1,0 +1,91 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.popular {
+  padding: 50px 0;
+}
+
+.popular__entry {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.popular__headline {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.popular__list {
+  @include mixins.list-reset;
+  margin-bottom: 32px;
+}
+
+.popular__item {
+  position: relative;
+  max-width: 285px;
+}
+
+.popular__rating {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  width: 65px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  background-color: rgba(253, 253, 253, 0.4);
+  border-radius: 4px 0 0 4px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/sprite.svg#star");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.popular__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.popular__wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.popular__caption {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: variables.$color-secondary;
+}
+
+.popular__price {
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: variables.$color-secondary;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.popular__button {
+  max-width: 220px;
+  margin: 0 auto;
+}

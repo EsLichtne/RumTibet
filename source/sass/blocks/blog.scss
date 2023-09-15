@@ -1,0 +1,27 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.blog {
+  padding: 50px 0;
+  background-color: #f3f5f4;
+}
+
+.blog__entry {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.blog__headline {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.blog__list {
+  @include mixins.list-reset;
+  margin-bottom: 32px;
+}
+
+.blog__button {
+  max-width: 200px;
+  margin: 0 auto;
+}

@@ -14,5 +14,19 @@
 }
 
 .page__body {
+  position: relative;
+  min-height: 100vh;
   margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #ffffff;
+
+  &--no-scroll {
+    overflow: hidden;
+  }
+}
+
+.page__header {
+  position: absolute;
+  width: 100%;
 }

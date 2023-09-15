@@ -1,0 +1,22 @@
+@use "../common/variables.scss";
+
+.title {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+
+  &--primary {
+    font-family: variables.$font-secondary;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 700;
+    color: variables.$color-secondary;
+  }
+
+  &--secondary {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 800;
+    color: variables.$text-primary;
+  }
+}

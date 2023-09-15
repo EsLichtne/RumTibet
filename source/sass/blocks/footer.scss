@@ -1,0 +1,47 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.footer {
+  background-color: variables.$color-primary;
+  padding-top: 50px;
+}
+
+.footer__headline {
+  margin-bottom: 17px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #f3f5f4;
+}
+
+.footer__description {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer__contacts {
+  margin: 0;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 24px;
+}
+
+.footer__email {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer__phone {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer__menu {
+  margin-bottom: 80px;
+}

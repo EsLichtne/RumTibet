@@ -1,0 +1,33 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.social__list {
+  @include mixins.list-reset;
+  display: flex;
+  gap: 16px;
+}
+
+.social__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--telegram {
+    mask: url("../img/sprite.svg#telegram");
+  }
+
+  &--vk {
+    mask: url("../img/sprite.svg#vk");
+  }
+
+  &--pinterest {
+    mask: url("../img/sprite.svg#pinterest");
+  }
+
+  &--skype {
+    mask: url("../img/sprite.svg#skype");
+  }
+}

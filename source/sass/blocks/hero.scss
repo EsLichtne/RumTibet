@@ -1,0 +1,17 @@
+@use "../common/variables.scss";
+
+.hero {
+  padding: 214px 0 50px;
+  background-color: variables.$color-primary;
+  background-image: url("../img/hero-mountain-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__title {
+  margin-bottom: 32px;
+}
+
+.hero__button {
+  max-width: 213px;
+}

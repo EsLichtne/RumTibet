@@ -1,0 +1,63 @@
+@use "../common/variables.scss";
+
+.article {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  gap: 16px;
+  max-width: 285px;
+  background-color: variables.$color-secondary;
+  border-radius: 10px;
+}
+
+.article__image-wrapper {
+  grid-column: 1 / -1;
+  width: 285px;
+  height: 280px;
+}
+
+.article__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.article__title {
+  grid-column: 2 / 3;
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: variables.$text-primary;
+}
+
+.article__description {
+  grid-column: 2 / 3;
+  margin: 0;
+  max-height: 80px;
+  font-size: 14px;
+  line-height: 20px;
+  color: variables.$text-primary;
+  overflow: hidden;
+}
+
+.article__footer {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article__date {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: variables.$color-accent;
+}
+
+.article__button {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: variables.$color-primary;
+}
