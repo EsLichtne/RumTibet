@@ -19,6 +19,7 @@
 .blog__list {
   @include mixins.list-reset;
   margin-bottom: 32px;
+  gap: 24px;
 }
 
 .blog__button {

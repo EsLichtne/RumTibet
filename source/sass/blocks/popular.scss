@@ -18,6 +18,7 @@
 .popular__list {
   @include mixins.list-reset;
   margin-bottom: 32px;
+  gap: 20px;
 }
 
 .popular__item {

@@ -1,7 +1,7 @@
 let navButton = document.querySelector(".navigation__button");
 let toggle = document.querySelector(".navigation__toggle");
 let nav = document.querySelector(".navigation");
-let body = document. querySelector(".page__body");
+let body = document.querySelector(".page__body");
 
 navButton.addEventListener("click", function () {
   toggle.classList.toggle("navigation__toggle--open");
