@@ -5,20 +5,24 @@
   <meta charset="UTF-8">
   <meta name="description" content="Прогулка в горы с командой единомышленников">
   <meta name="keywords" content="прогулка в горах, горные туры, путешествие в горы">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>РумТибет</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="page__body">
   <header class="header">
-    <nav class="navigation">
-      <a class="logo" href="#">
-        <img src="img/logo.svg" alt="Логотип компании" class="logo__image" width="84" height="44">
-      </a>
-      <button class="navigation__button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
-      <ul class="navigation__list site-list">
+    <nav class="navigation container">
+      <div class="navigation__hat">
+        <a class="logo" href="#">
+          <img src="img/logo.svg" alt="Логотип компании" class="logo__image" width="84" height="44">
+        </a>
+        <button class="navigation__button">
+          <span class="visually-hidden">Открыть меню.</span>
+          <span class="navigation__button-icon"></span>
+        </button>
+      </div>
+      <ul class="navigation__list site-list navigation__list--closed">
         <a href="#" class="site-list__link">
           <li class="site-list__item">Про гида</li>
         </a>
