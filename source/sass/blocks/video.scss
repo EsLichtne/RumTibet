@@ -6,6 +6,11 @@
 
 .video__link {
   display: block;
+
+  &:hover + .video__button {
+    transform: scale(150%) translate(-35%, -35%);
+    transition: transform 0.5s;
+  }
 }
 
 .video__image {
@@ -25,6 +30,7 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: transform 0.5s;
 
   &::after {
     content: "";
@@ -33,5 +39,10 @@
     height: 22px;
     mask: url("../img/sprite.svg#play") no-repeat center;
     background-color: variables.$color-primary;
+  }
+
+  &:hover {
+    transform: scale(150%) translate(-35%, -35%);
+    transition: transform 0.5s;
   }
 }
