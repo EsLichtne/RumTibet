@@ -15,11 +15,13 @@
     padding: 12px;
     color: variables.$color-secondary;
     background-color: variables.$color-primary;
+    transition: background-color 0.5s ease;
 
     &:hover {
       color: variables.$color-primary;
       background-color: variables.$color-secondary;
       outline: 1px solid variables.$color-primary;
+      transition: background-color 0.5s ease;
     }
   }
 
@@ -27,11 +29,13 @@
     padding: 16px;
     color: variables.$color-primary;
     background-color: variables.$color-secondary;
+    transition: background-color 0.5s ease;
 
     &:hover {
       color: variables.$color-secondary;
       background-color: variables.$color-primary;
       outline: 1px solid variables.$color-secondary;
+      transition: background-color 0.5s ease;
     }
   }
 }
