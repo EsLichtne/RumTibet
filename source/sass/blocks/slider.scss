@@ -1,7 +1,11 @@
 @use "../common/variables.scss";
 
 .slider {
-  max-width: 390px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider__wrapper {
   display: flex;
   overflow: scroll;
 }

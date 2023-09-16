@@ -1,5 +1,9 @@
 @use "../common/variables.scss";
 
+.navigation {
+  transition: width 0.6s;
+}
+
 .navigation__hat {
   display: flex;
   justify-content: space-between;
@@ -80,6 +84,7 @@
   height: 100%;
   padding: 0 16px;
   background-color: variables.$color-primary;
+  transition: width 0.6s;
 }
 
 .navigation--open .navigation__logo {
