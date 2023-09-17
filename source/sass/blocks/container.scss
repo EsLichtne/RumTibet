@@ -1,6 +1,6 @@
 @use "../common/variables.scss";
 
 .container {
-  width: calc(100% - 32px);
+  width: calc(100vw - 32px);
   margin: 0 auto;
 }

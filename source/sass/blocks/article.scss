@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 16px auto 16px;
   gap: 16px;
-  max-width: 285px;
+  padding-bottom: 16px;
   background-color: variables.$color-secondary;
   border-radius: 10px;
 }
@@ -44,6 +44,7 @@
   grid-column: 2 / 3;
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .article__date {
