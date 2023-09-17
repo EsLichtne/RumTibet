@@ -1,0 +1,19 @@
+@keyframes overlay {
+  0% {
+    top: 330px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes reverse-overlay {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 330px;
+  }
+}

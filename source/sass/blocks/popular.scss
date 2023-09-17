@@ -1,5 +1,6 @@
 @use "../common/variables.scss";
 @use "../common/mixins.scss";
+@use "../common/animations.scss";
 
 .popular {
   padding: 50px 0;
@@ -24,6 +25,7 @@
 .popular__item {
   position: relative;
   max-width: 285px;
+  overflow: hidden;
 }
 
 .popular__rating {
@@ -51,39 +53,26 @@
   }
 }
 
+.popular__image-wrapper {
+  display: block;
+}
+
 .popular__image {
   width: 100%;
   height: auto;
   object-fit: contain;
 }
 
-.popular__wrapper {
+.popular__overlay {
   position: absolute;
-  bottom: 0;
+  top: 330px;
   width: 100%;
-  padding: 20px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
-}
+  height: 100%;
+  animation: reverse-overlay 2s cubic-bezier(0.55, 0.09, 0.68, 0.53) forwards;
 
-.popular__caption {
-  margin: 0;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 700;
-  color: variables.$color-secondary;
-}
-
-.popular__price {
-  padding: 6px 12px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
-  color: variables.$color-secondary;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
+  &:hover {
+    animation: overlay 2s cubic-bezier(0.55, 0.09, 0.68, 0.53) forwards;
+  }
 }
 
 .popular__button {

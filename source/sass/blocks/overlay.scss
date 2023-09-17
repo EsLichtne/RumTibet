@@ -1,0 +1,59 @@
+@use "../common/variables.scss";
+
+.overlay {
+  display: grid;
+  grid-template-columns: 146px 67px;
+  grid-template-rows: min-content 1fr min-content;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 24px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+}
+
+.overlay__headline {
+  grid-column: 1 / 2;
+  margin: 0;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 700;
+  color: variables.$color-secondary;
+}
+
+.overlay__caption {
+  grid-column: 1 / 2;
+  font-size: 14px;
+  line-height: 18px;
+  color: variables.$color-secondary;
+
+  @media (max-width: variables.$mobile) {
+    display: none;
+  }
+}
+
+.overlay__description {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: variables.$color-secondary;
+}
+
+.overlay__button {
+  grid-column: 1 / 2;
+  max-width: 176px;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.overlay__price {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: variables.$color-secondary;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
