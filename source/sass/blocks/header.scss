@@ -1,1 +1,7 @@
 @use "../common/variables.scss";
+
+.header {
+  @media (min-width: variables.$desktop) {
+    padding-top: 16px;
+  }
+}

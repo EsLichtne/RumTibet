@@ -39,6 +39,7 @@
           <a href="#" class="site-list__link">Контакты</a>
         </li>
       </ul>
+      <a class="navigation__link button button--primary" href="#">Консультация</a>
     </nav>
   </header>
   <main class="page__content">
@@ -46,58 +47,88 @@
       <div class="container">
         <h1 class="hero__title title title--primary">Насладись прогулкой в горы
           с&nbsp;командой единомышленников</h1>
-        <a class="hero__button button button--secondary" href="#">Найти программу</a>
+        <form class="hero__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="hero__label" for="location">Выберите из списка</label>
+          <select class="hero__select select" name="location" id="location" aria-label="Сортировка.">
+            <option value="">Локация для тура</option>
+          </select>
+          <label class="hero__label" for="date">Укажите диапазон</label>
+          <input class="hero__field" type="text" name="date" id="date" placeholder="Дата похода">
+          <label class="hero__label" for="participants">Минимум 4 человека</label>
+          <select class="hero__select select" name="participants" id="participants" aria-label="Сортировка.">
+            <option class="select__option" value="">Участники</option>
+          </select>
+          <button class="hero__button button button--secondary" type="button">Найти программу</button>
+        </form>
       </div>
     </section>
     <section class="about">
-      <div class="container">
-        <h2 class="about__entry entry">О нашем походе</h2>
-        <p class="about__headline title title--secondary">Исследуйте все горные массивы мира вместе с нами</p>
-        <p class="about__intro intro">Покоряйте вершины и открывайте величественные пейзажи, любуясь
-          красотой природы. Наша команда опытных гидов и путешественников поможет вам спланировать и осуществить
-          незабываемые походы. Расширьте свои горизонты и испытайте истинное волшебство горных вершин.</p>
-        <a class="about__button button button--primary" href="#">Программа тура</a>
-        <div class="about__video video">
-          <a class="video__link" href="https://youtu.be/Y647ZtYDGdE" target="_blank">
-            <img class="video__image" src="img/video-house.jpg" srcset="img/video-house@2x.jpg, 2x" width="358"
-              height="416" alt="Горные массивы.">
-          </a>
-          <button class="video__button">
-            <span class="visually-hidden">Запустить видео.</span>
-          </button>
+      <div class="container about__wrapper">
+        <div class="about__content-wrapper">
+          <h2 class="about__entry entry">О нашем походе</h2>
+          <p class="about__headline title title--secondary">Исследуйте все горные массивы мира вместе с нами</p>
+          <p class="about__intro intro">Покоряйте вершины и открывайте величественные пейзажи, любуясь
+            красотой природы. Наша команда опытных гидов и путешественников поможет вам спланировать и осуществить
+            незабываемые походы. Расширьте свои горизонты и испытайте истинное волшебство горных вершин.</p>
+          <a class="about__button button button--primary" href="#">Программа тура</a>
+        </div>
+        <div class="about__video-wrapper">
+          <img class="about__extra-image" src="img/about-mountain.jpg" srcset="img/about-mountain@2x.jpg, 2x"
+            width="350" height="400" alt="Скала в тумане.">
+          <div class="about__video video">
+            <a class="video__link" href="https://youtu.be/Y647ZtYDGdE" target="_blank">
+              <img class="video__image" src="img/video-house.jpg" srcset="img/video-house@2x.jpg, 2x" width="358"
+                height="416" alt="Горные массивы.">
+            </a>
+            <button class="video__button">
+              <span class="visually-hidden">Запустить видео.</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
     <section class="proposal">
       <div class="container">
-        <h2 class="proposal__entry entry">Наше предложение</h2>
-        <p class="proposal__headline title title--secondary">Лучшие программы для тебя</p>
-        <p class="proposal__intro intro">Лучшие индивидуальные программы путешествия в горах ждут именно вас!
-          Представьте
-          себе возможность исследовать удивительные горные массивы мира вместе с нами. Мы предлагаем неповторимые
-          приключения, где вы сможете ощутить силу и красоту горных вершин. Наши опытные гиды и инструкторы помогут
-          вам
-          освоить все необходимые навыки и технику, чтобы вы могли безопасно и
-          уверенно путешествовать в горах.</p>
-        <ul class="proposal__list">
-          <li class="proposal__item proposal__item--guide">
-            <h3 class="proposal__capture">Опытный гид</h3>
-            <p class="proposal__description">Присоединяйтесь к нам и окажитесь в надежных руках опытного гида!
-              Забудьте
-              о бесконечных картaх и неверных путях - с нами вы точно достигнете вершины!</p>
-          </li>
-          <li class="proposal__item proposal__item--safety">
-            <h3 class="proposal__capture">Безопасный поход</h3>
-            <p class="proposal__description">Мы обеспечиваем обучение по безопасности, предоставляем соответствующее
-              снаряжение и всегда следим за вашим благополучием.</p>
-          </li>
-          <li class="proposal__item proposal__item--loyal">
-            <h3 class="proposal__capture">Лояльные цены</h3>
-            <p class="proposal__description">Наши горные туры специально созданы для вас - цены, которые не нагружают
-              ваш бюджет, но при этом позволяют получить незабываемые впечатления.</p>
-          </li>
-        </ul>
-        <a class="proposal__button button button--primary" href="#">Стоимость программ</a>
+        <div class="proposal__content-wrapper">
+          <h2 class="proposal__entry entry">Наше предложение</h2>
+          <p class="proposal__headline title title--secondary">Лучшие программы для тебя</p>
+          <p class="proposal__intro intro">Лучшие индивидуальные программы путешествия в горах ждут именно вас!
+            Представьте
+            себе возможность исследовать удивительные горные массивы мира вместе с нами. Мы предлагаем неповторимые
+            приключения, где вы сможете ощутить силу и красоту горных вершин. Наши опытные гиды и инструкторы помогут
+            вам
+            освоить все необходимые навыки и технику, чтобы вы могли безопасно и
+            уверенно путешествовать в горах.</p>
+          <ul class="proposal__list">
+            <li class="proposal__item proposal__item--guide">
+              <h3 class="proposal__capture">Опытный гид</h3>
+              <p class="proposal__description">Присоединяйтесь к нам и окажитесь в надежных руках опытного гида!
+                Забудьте
+                о бесконечных картaх и неверных путях - с нами вы точно достигнете вершины!</p>
+            </li>
+            <li class="proposal__item proposal__item--safety">
+              <h3 class="proposal__capture">Безопасный поход</h3>
+              <p class="proposal__description">Мы обеспечиваем обучение по безопасности, предоставляем соответствующее
+                снаряжение и всегда следим за вашим благополучием.</p>
+            </li>
+            <li class="proposal__item proposal__item--loyal">
+              <h3 class="proposal__capture">Лояльные цены</h3>
+              <p class="proposal__description">Наши горные туры специально созданы для вас - цены, которые не нагружают
+                ваш бюджет, но при этом позволяют получить незабываемые впечатления.</p>
+            </li>
+          </ul>
+          <a class="proposal__button button button--primary" href="#">Стоимость программ</a>
+        </div>
+        <div class="proposal__gallery">
+          <img class="proposal__image" src="img/proposal/proposal-1.jpg" srcset="img/proposal/proposal-1@2x.jpg, 2x"
+            alt="Рука со стаканом на фоне горного озера." width="250" height="250">
+          <img class="proposal__image" src="img/proposal/proposal-2.jpg" srcset="img/proposal/proposal-2@2x.jpg, 2x"
+            alt="Человек в горах." width="250" height="250">
+          <img class="proposal__image" src="img/proposal/proposal-3.jpg" srcset="img/proposal/proposal-3@2x.jpg, 2x"
+            alt="Человек сидит на снегоходе." width="250" height="250">
+          <img class="proposal__image" src="img/proposal/proposal-4.jpg" srcset="img/proposal/proposal-4@2x.jpg, 2x"
+            alt="Горная местность с водой красного цвета." width="250" height="250">
+        </div>
       </div>
     </section>
     <section class="popular">

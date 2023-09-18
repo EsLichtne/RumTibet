@@ -3,4 +3,8 @@
 .container {
   width: calc(100vw - 32px);
   margin: 0 auto;
+
+  @media (min-width: variables.$desktop) {
+    width: calc(100vw - 740px);
+  }
 }

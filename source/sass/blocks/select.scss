@@ -1,0 +1,15 @@
+@use "../common/variables.scss";
+
+.select {
+  appearance: none;
+  padding: 14px 16px;
+  padding-right: 32px;
+  color: variables.$color-secondary;
+  border: 1px solid #e1e3e4;
+  border-radius: 8px;
+  background-color: transparent;
+  background-image: url("../img/sprite.svg#select");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 20px 20px;
+}

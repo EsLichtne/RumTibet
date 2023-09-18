@@ -2,17 +2,34 @@
 
 .navigation {
   transition: width 0.6s;
+
+  @media (min-width: variables.$desktop) {
+    display: grid;
+    align-items: center;
+  }
 }
 
 .navigation__hat {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / 2;
+    width: 137px;
+    margin-right: 212px;
+    padding: 0;
+  }
 }
 
 .navigation__logo {
   width: 84px;
   height: 44px;
+
+  @media (min-width: variables.$desktop) {
+    width: 137px;
+    height: 72px;
+  }
 }
 
 .navigation__button {
@@ -22,6 +39,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  @media (min-width: variables.$desktop) {
+    display: none;
+  }
 }
 
 .navigation__toggle,
@@ -76,6 +97,10 @@
 
 .navigation .navigation__list {
   display: none;
+
+  @media (min-width: variables.$desktop) {
+    display: flex;
+  }
 }
 
 .navigation--open {
@@ -85,17 +110,34 @@
   padding: 0 16px;
   background-color: variables.$color-primary;
   transition: width 0.6s;
+
+  & .navigation__logo {
+    display: none;
+  }
+
+  & .navigation__hat {
+    justify-content: end;
+    padding-bottom: 10px;
+  }
+
+  & .navigation__list {
+    display: grid;
+  }
 }
 
-.navigation--open .navigation__logo {
-  display: none;
+.navigation__list {
+  @media (min-width: variables.$desktop) {
+    grid-column: 2 / 3;
+  }
 }
 
-.navigation--open .navigation__hat {
-  justify-content: end;
-  padding-bottom: 10px;
-}
+.navigation__link {
+  @media (max-width: variables.$mobile) {
+    display: none;
+  }
 
-.navigation--open .navigation__list {
-  display: grid;
+  @media (min-width: variables.$desktop) {
+    grid-column: 3 / 4;
+    margin-left: auto;
+  }
 }
