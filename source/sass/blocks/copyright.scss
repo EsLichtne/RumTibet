@@ -6,6 +6,13 @@
   background-color: variables.$text-primary;
 }
 
+.copyright__wrapper {
+  @media (min-width: variables.$desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .copyright__name {
   margin: 0;
   margin-bottom: 8px;
@@ -20,4 +27,8 @@
   line-height: 18px;
   font-weight: 600;
   color: #ffffff;
+
+  &:hover {
+    color: variables.$color-accent;
+  }
 }

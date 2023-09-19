@@ -14,6 +14,7 @@
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: background-color 0.5s;
 
   &--telegram {
     mask: url("../img/sprite.svg#telegram");
@@ -29,5 +30,10 @@
 
   &--skype {
     mask: url("../img/sprite.svg#skype");
+  }
+
+  &:hover {
+    background-color: variables.$color-accent;
+    transition: background-color 0.5s;
   }
 }

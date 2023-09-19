@@ -4,6 +4,11 @@
 .blog {
   padding: 50px 0;
   background-color: #f3f5f4;
+
+  @media (min-width: variables.$desktop) {
+    padding: 80px 0 100px;
+    text-align: center;
+  }
 }
 
 .blog__entry {
@@ -14,16 +19,33 @@
 .blog__headline {
   margin: 0;
   margin-bottom: 32px;
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.blog__slider {
+  margin-bottom: 50px;
 }
 
 .blog__list {
   @include mixins.list-reset;
   margin-bottom: 32px;
   gap: 24px;
+
+  @media (min-width: variables.$desktop) {
+    gap: 24px 20px;
+  }
 }
 
 .blog__item {
   max-width: 285px;
+
+  @media (min-width: variables.$desktop) {
+    max-width: 580px;
+    text-align: start;
+  }
 }
 
 .blog__article {
@@ -33,4 +55,8 @@
 .blog__button {
   max-width: 200px;
   margin: 0 auto;
+
+  @media (min-width: variables.$desktop) {
+    max-width: 220px;
+  }
 }

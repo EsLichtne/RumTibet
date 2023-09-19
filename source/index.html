@@ -88,7 +88,7 @@
       </div>
     </section>
     <section class="proposal">
-      <div class="container">
+      <div class="container proposal__wrapper">
         <div class="proposal__content-wrapper">
           <h2 class="proposal__entry entry">Наше предложение</h2>
           <p class="proposal__headline title title--secondary">Лучшие программы для тебя</p>
@@ -135,7 +135,7 @@
       <div class="container">
         <p class="popular__entry entry">По версии отдыхающих</p>
         <h2 class="popular__headline title title--secondary">Популярные направления</h2>
-        <div class="slider">
+        <div class="popular__slider slider">
           <ul class="popular__list slider__wrapper">
             <li class="popular__item slider__item">
               <p class="popular__rating">4.9</p>
@@ -192,7 +192,7 @@
       <div class="container">
         <p class="blog__entry entry">Делимся впечатлениями</p>
         <h2 class="blog__headline title title--secondary">Блог о путешествиях</h2>
-        <div class="slider">
+        <div class="blog__slider slider">
           <ul class="blog__list slider__wrapper">
             <li class="blog__item slider__item">
               <article class="blog__article article">
@@ -272,7 +272,7 @@
       <div class="container">
         <h2 class="gallery__entry entry">Фото-отчет</h2>
         <p class="gallery__headline title title--secondary">Делимся впечатлениями</p>
-        <div class="slider">
+        <div class="gallery__slider slider">
           <ul class="gallery__list slider__wrapper">
             <li class="gallery__item slider__item">
               <img class="gallery__image" src="img/gallery/gallery-1.jpg" srcset="img/gallery/gallery-1@2x.jpg, 2x"
@@ -321,7 +321,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__wrapper">
       <h2 class="footer__headline">Компания «РумТибет»</h2>
       <p class="footer__description">Путешествуйте с профессионалами и ощутите настоящую свободу природы вместе с
         «РумТибет»!</p>
@@ -329,7 +329,7 @@
         <a class="footer__email" href="mailto:info@domain.com">info@domain.com</a>
         <a class="footer__phone" href="tel:+7(123)456-78-90">+7 (123) 456-78-90</a>
       </p>
-      <section class="social">
+      <section class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a href="#" class="social__link social__link--telegram">
@@ -399,8 +399,10 @@
       </section>
     </div>
     <section class="footer__copyright copyright">
-      <p class="copyright__name">ИП Константинопольский К.К., 2023</p>
-      <a href="#" class="copyright__policy">Политика обработки персональных данных</a>
+      <div class="container copyright__wrapper">
+        <p class="copyright__name">ИП Константинопольский К.К., 2023</p>
+        <a class="copyright__policy" href="#">Политика обработки персональных данных</a>
+      </div>
     </section>
   </footer>
   <script src="js/script.js"></script>

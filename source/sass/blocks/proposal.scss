@@ -4,18 +4,40 @@
 .proposal {
   padding: 50px 0;
   background-color: #f3f5f4;
+
+  @media (min-width: variables.$desktop) {
+    padding: 80px 0 100px;
+  }
+}
+
+.proposal__wrapper {
+  @media (min-width: variables.$desktop) {
+    display: grid;
+    grid-template-columns: 580px auto;
+    gap: 90px;
+    align-items: center;
+  }
 }
 
 .proposal__entry {
+  margin: 0;
   margin-bottom: 8px;
 }
 
 .proposal__headline {
   margin-bottom: 32px;
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 40px;
+  }
 }
 
 .proposal__intro {
   margin-bottom: 32px;
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 40px;
+  }
 }
 
 .proposal__list {
@@ -23,12 +45,17 @@
   display: grid;
   gap: 32px;
   margin-bottom: 32px;
+
+  @media (min-width: variables.$desktop) {
+    gap: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .proposal__item {
   display: grid;
   grid-template-columns: 50px auto;
-  gap: 16px;
+  column-gap: 16px;
 
   &::before {
     grid-row: span 2;
@@ -55,6 +82,7 @@
 .proposal__capture {
   grid-column: 2 / -1;
   margin: 0;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -72,15 +100,25 @@
 .proposal__button {
   max-width: 212px;
   margin: 0 auto;
+
+  @media (min-width: variables.$desktop) {
+    max-width: 236px;
+    margin: 0;
+  }
 }
 
 .proposal__gallery {
   @media (max-width: variables.$mobile) {
     display: none;
   }
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .proposal__image {
+
   &:nth-child(1),
   &:nth-child(4) {
     border-radius: 0 50px;

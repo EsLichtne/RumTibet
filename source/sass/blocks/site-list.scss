@@ -28,10 +28,6 @@
     mask: url("../img/sprite.svg#arrow") no-repeat center;
     mask-size: 6px 10px;
     background-color: variables.$color-secondary;
-
-    @media (min-width: variables.$desktop) {
-      display: none;
-    }
   }
 
   &:hover {

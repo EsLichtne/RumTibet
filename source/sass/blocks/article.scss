@@ -7,12 +7,25 @@
   padding-bottom: 16px;
   background-color: variables.$color-secondary;
   border-radius: 10px;
+
+  @media (min-width: variables.$desktop) {
+    grid-template-columns: 230px auto;
+    gap: 24px;
+    padding: 16px;
+  }
 }
 
 .article__image-wrapper {
   grid-column: 1 / -1;
   width: 285px;
   height: 280px;
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / 2;
+    grid-row: span 3;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .article__image {
@@ -28,6 +41,11 @@
   line-height: 26px;
   font-weight: 700;
   color: variables.$text-primary;
+
+  @media (min-width: variables.$desktop) {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 
 .article__description {
